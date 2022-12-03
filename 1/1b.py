@@ -13,5 +13,5 @@ def main(inp):
 
 if __name__ == "__main__":
     f = open("1/input.txt", "r")
-    nums = f.readlines()
-    print(main(nums))
+    inp = f.readlines()
+    print(main(inp))
