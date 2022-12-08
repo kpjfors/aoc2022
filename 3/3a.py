@@ -1,6 +1,6 @@
 def main(inp):
     score = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    score = {i[1]:i[0] for i in enumerate([x for x in score])}
+    score = {i[1]: i[0] for i in enumerate([x for x in score])}
     tot_sum = 0
     for i in inp:
         firsthalf = i[:int(len(i)/2)]
@@ -10,6 +10,7 @@ def main(inp):
         sum_score = score[firstcount.intersection(secondcount).pop()] + 1
         tot_sum += sum_score
     return(tot_sum)
+
 
 if __name__ == "__main__":
     f = open("3/input.txt", "r")

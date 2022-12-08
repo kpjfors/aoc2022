@@ -1,6 +1,6 @@
 def main(inp):
     score = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    score = {i[1]:i[0] for i in enumerate([x for x in score])}
+    score = {i[1]: i[0] for i in enumerate([x for x in score])}
     tot_sum = 0
     candidates = set()
     for i in inp:
@@ -12,6 +12,7 @@ def main(inp):
         if len(candidates) == 1:
             tot_sum += score[candidates.pop()] + 1
     return(tot_sum)
+
 
 if __name__ == "__main__":
     f = open("3/input.txt", "r")

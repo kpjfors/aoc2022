@@ -4,8 +4,9 @@ def main(inp):
     while 1:
         substr = seq[i:i+14]
         if len(set(substr)) == len(substr):
-            return i+14 
+            return i+14
         i += 1
+
 
 if __name__ == "__main__":
     f = open("6/input.txt", "r")
